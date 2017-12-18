@@ -1,3 +1,2 @@
-# PhotoEditor
-# go
 # ToneCurve
+
