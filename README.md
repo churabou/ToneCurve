@@ -3,12 +3,13 @@
 
 you can use .acv file from photoshop 
 
-ACVParcer can read and create data to input CIColorCubeWithColorSpace Filter
+ACVParcer can read .acv file and create data to input CIColorCubeWithColorSpace Filter
         
         let parcer = ACVParcer(with: "vintage.acv")
         let data = parcer.createColorCubeData()
 
-and then you cifilter 
+following is a usual process
+https://developer.apple.com/library/content/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIColorCubeWithColorSpace
 
         let image = UIImage(named: "image.png")!
         let inputImage = CIImage(cgImage:  image.cgImage!)
